@@ -1,0 +1,32 @@
+# Ignorer les fichiers sensibles et de configuration
+wp-config.php
+wp-config-sample.php
+
+# Ignorer les dossiers contenant les fichiers de base de WordPress (ils peuvent être réinstallés)
+wp-admin/
+wp-includes/
+
+# Ignorer les uploads (fichiers médias, images, vidéos, etc.)
+wp-content/uploads/
+
+# Ignorer les plugins par défaut WordPress
+wp-content/plugins/hello.php
+wp-content/plugins/akismet/
+
+# Ignorer les fichiers de cache générés
+wp-content/cache/
+wp-content/backups/
+
+# Ignorer les fichiers temporaires
+*.log
+*.swp
+
+# Ignorer les fichiers d'installation et d'upgrade
+upgrade/
+
+# Ignorer le fichier .htaccess (qui est souvent spécifique à l'environnement)
+.htaccess
+
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db

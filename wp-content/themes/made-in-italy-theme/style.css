@@ -1,0 +1,51 @@
+/*
+Theme Name: Made in Italy
+Theme URI: http://example.com/made-in-italy
+Author: Magueth
+Author URI: http://example.com
+Description: Un thème personnalisé pour un site vitrine de restaurant.
+Version: 1.0
+License: GPL2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: made-in-italy
+*/
+
+/* Body et structure globale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* En-tête */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Page d'Accueil */
+.home-content {
+  background-color: #f0f0f0;
+}
+
+/* Page de Contact */
+.contact-content {
+  padding: 20px;
+  background-color: #e0e0e0;
+}
+
+/* Page Nos Restaurants */
+.restaurants-content {
+  display: flex;
+  flex-wrap: wrap;
+}
