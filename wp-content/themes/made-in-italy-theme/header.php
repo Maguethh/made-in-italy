@@ -9,6 +9,17 @@
 <body <?php body_class(); ?>>
     <header>
         <nav>
-            <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
+            <ul class="main-menu">
+                <li><a href="/made-in-italy/" class="nav-button">Commander</a></li>
+                <li><a href="/made-in-italy/" class="nav-button">Notre menu</a></li>
+                <!-- Logo -->
+                <li class="logo">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.svg" alt="Logo">
+                    </a>
+                </li>
+                <li><a href="/made-in-italy/nos-restaurants" class="nav-button">Nos restaurants</a></li>
+                <li><a href="/made-in-italy/contact" class="nav-button">Contact</a></li>
+            </ul>
         </nav>
     </header>

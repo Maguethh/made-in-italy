@@ -1,0 +1,48 @@
+[04-Feb-2025 18:35:12 UTC] Test error log
+[04-Feb-2025 18:35:12 UTC] PHP Notice:  This is a test error! in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 95
+[04-Feb-2025 18:35:54 UTC] Test error log
+[04-Feb-2025 18:35:54 UTC] PHP Notice:  This is a test error! in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 95
+[04-Feb-2025 18:36:15 UTC] Test error log
+[04-Feb-2025 18:36:15 UTC] PHP Notice:  This is a test error! in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 104
+[04-Feb-2025 18:36:15 UTC] enqueue_styles_and_scripts called
+[04-Feb-2025 18:36:35 UTC] Test error log
+[04-Feb-2025 18:36:35 UTC] PHP Notice:  This is a test error! in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 104
+[04-Feb-2025 18:36:35 UTC] enqueue_styles_and_scripts called
+[04-Feb-2025 18:36:38 UTC] Test error log
+[04-Feb-2025 18:36:38 UTC] PHP Notice:  This is a test error! in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 104
+[04-Feb-2025 18:36:38 UTC] enqueue_styles_and_scripts called
+[04-Feb-2025 18:41:12 UTC] Test error log
+[04-Feb-2025 18:41:12 UTC] PHP Notice:  This is a test error! in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 95
+[05-Feb-2025 09:54:31 UTC] Automatic updates starting...
+[05-Feb-2025 09:54:32 UTC]   Automatic plugin updates starting...
+[05-Feb-2025 09:54:32 UTC]   Automatic plugin updates complete.
+[05-Feb-2025 09:54:32 UTC] Automatic updates complete.
+[05-Feb-2025 10:45:12 UTC] PHP Deprecated:  La fonction wp_update_https_detection_errors est <strong>obsolète</strong> depuis la version 6.4.0, aucune alternative n’est disponible. in C:\xampp\htdocs\made-in-italy\wp-includes\functions.php on line 6114
+[05-Feb-2025 10:45:19 UTC] PHP Warning:  Attempt to read property "title" on null in C:\xampp\htdocs\made-in-italy\wp-includes\class-wp-customize-widgets.php on line 923
+[05-Feb-2025 11:39:10 UTC] PHP Parse error:  syntax error, unexpected token "/", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 89
+[05-Feb-2025 11:39:10 UTC] PHP Parse error:  syntax error, unexpected token "/", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 89
+[05-Feb-2025 11:44:27 UTC] Automatic updates starting...
+[05-Feb-2025 11:44:27 UTC]   Automatic plugin updates starting...
+[05-Feb-2025 11:44:27 UTC]   Automatic plugin updates complete.
+[05-Feb-2025 11:44:27 UTC] Automatic updates complete.
+[05-Feb-2025 15:29:14 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:29:14 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:29:14 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:29:14 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:29:14 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:29:14 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:29:14 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:29:14 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:30:03 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:30:03 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:30:03 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:30:03 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:30:03 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:30:03 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:30:03 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[05-Feb-2025 15:30:03 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 122
+[06-Feb-2025 12:05:31 UTC] Automatic updates starting...
+[06-Feb-2025 12:05:32 UTC]   Automatic plugin updates starting...
+[06-Feb-2025 12:05:32 UTC]   Automatic plugin updates complete.
+[06-Feb-2025 12:05:32 UTC] Automatic updates complete.
+[06-Feb-2025 12:38:16 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 223
