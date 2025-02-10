@@ -46,3 +46,52 @@
 [06-Feb-2025 12:05:32 UTC]   Automatic plugin updates complete.
 [06-Feb-2025 12:05:32 UTC] Automatic updates complete.
 [06-Feb-2025 12:38:16 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 223
+[07-Feb-2025 10:47:10 UTC] Automatic updates starting...
+[07-Feb-2025 10:47:10 UTC]   Automatic plugin updates starting...
+[07-Feb-2025 10:47:10 UTC]   Automatic plugin updates complete.
+[07-Feb-2025 10:47:11 UTC] Automatic updates complete.
+[07-Feb-2025 11:43:54 UTC] Automatic updates starting...
+[07-Feb-2025 11:43:54 UTC]   Automatic plugin updates starting...
+[07-Feb-2025 11:43:54 UTC]   Automatic plugin updates complete.
+[07-Feb-2025 11:43:54 UTC] Automatic updates complete.
+[07-Feb-2025 13:25:27 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 404
+[07-Feb-2025 13:30:23 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 410
+[07-Feb-2025 13:30:55 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 411
+[07-Feb-2025 13:30:55 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 411
+[07-Feb-2025 13:51:36 UTC] PHP Warning:  Undefined array key "type" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 360
+[07-Feb-2025 13:51:36 UTC] PHP Warning:  Undefined array key "type" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 360
+[07-Feb-2025 13:51:36 UTC] PHP Warning:  Undefined array key "type" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 360
+[07-Feb-2025 13:51:36 UTC] PHP Warning:  Undefined array key "type" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 360
+[07-Feb-2025 13:51:37 UTC] PHP Warning:  Undefined array key "type" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 360
+[07-Feb-2025 13:51:37 UTC] PHP Warning:  Undefined array key "type" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 360
+[07-Feb-2025 13:51:37 UTC] PHP Warning:  Undefined array key "type" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 360
+[07-Feb-2025 13:51:37 UTC] PHP Warning:  Undefined array key "type" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 360
+[07-Feb-2025 13:55:02 UTC] PHP Warning:  Undefined array key "subtitle" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 351
+[07-Feb-2025 13:55:02 UTC] PHP Warning:  Undefined array key "color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 356
+[07-Feb-2025 13:55:02 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 358
+[07-Feb-2025 14:03:42 UTC] PHP Warning:  Undefined array key "subtitle" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 352
+[07-Feb-2025 14:03:42 UTC] PHP Warning:  Undefined array key "color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 357
+[07-Feb-2025 14:03:42 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 359
+[07-Feb-2025 14:09:15 UTC] PHP Warning:  Undefined array key "color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\page-nos-restaurants.php on line 174
+[07-Feb-2025 14:09:15 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\page-nos-restaurants.php on line 175
+[07-Feb-2025 14:09:15 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\page-nos-restaurants.php on line 176
+[07-Feb-2025 14:09:15 UTC] PHP Warning:  Undefined array key "subtitle" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\page-nos-restaurants.php on line 176
+[07-Feb-2025 14:09:23 UTC] PHP Warning:  Undefined array key "subtitle" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 352
+[07-Feb-2025 14:09:23 UTC] PHP Warning:  Undefined array key "color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 357
+[07-Feb-2025 14:09:23 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 359
+[07-Feb-2025 14:09:35 UTC] PHP Warning:  Undefined array key "subtitle" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 352
+[07-Feb-2025 14:09:35 UTC] PHP Warning:  Undefined array key "color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 357
+[07-Feb-2025 14:09:35 UTC] PHP Warning:  Undefined array key "text_color" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 359
+[07-Feb-2025 14:16:39 UTC] PHP Parse error:  Unclosed '(' does not match ']' in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 463
+[07-Feb-2025 14:16:39 UTC] PHP Notice:  La fonction _load_textdomain_just_in_time a été appelée de façon <strong>incorrecte</strong>. Le chargement de la traduction pour le domaine <code>made-in-italy</code> a été déclenché trop tôt. Cela indique généralement que du code dans l’extension ou le thème s’exécute trop tôt. Les traductions doivent être chargées au moment de l’action <code>init</code> ou plus tard. Veuillez lire <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 6.7.0.) in C:\xampp\htdocs\made-in-italy\wp-includes\functions.php on line 6114
+[07-Feb-2025 14:16:39 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\made-in-italy\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[07-Feb-2025 14:16:39 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\made-in-italy\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[07-Feb-2025 14:16:40 UTC] PHP Parse error:  Unclosed '(' does not match ']' in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 463
+[07-Feb-2025 14:16:58 UTC] PHP Parse error:  Unclosed '(' does not match ']' in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 463
+[07-Feb-2025 14:16:58 UTC] PHP Parse error:  Unclosed '(' does not match ']' in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 463
+[10-Feb-2025 12:59:34 UTC] Automatic updates starting...
+[10-Feb-2025 12:59:34 UTC]   Automatic plugin updates starting...
+[10-Feb-2025 12:59:34 UTC]   Automatic plugin updates complete.
+[10-Feb-2025 12:59:34 UTC] Automatic updates complete.
+[10-Feb-2025 13:31:52 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[10-Feb-2025 13:54:54 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}

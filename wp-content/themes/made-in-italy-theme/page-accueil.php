@@ -24,7 +24,7 @@ get_header();
   <img class="next" src="<?php echo get_template_directory_uri(); ?>/images/slider-arrow.svg" onclick="plusSlides(1)" alt="Next Slide">
 </div>
     <div class="home-main-button-border">
-      <button class="home-main-button">j`ai faim !</button>
+      <a href="#home-food-preview" class="home-main-button">j`ai faim !</a>
     </div>
   </div>
   
@@ -54,7 +54,7 @@ get_header();
     </div>
   </div>
   
-  <div class="food-preview-section">
+  <div class="food-preview-section" id="home-food-preview">
     <div class="food-preview-section-title">Un aperçu de vos plats !</div>
     <div class="food-preview-grid">
       <?php

@@ -11,6 +11,19 @@ Text Domain: made-in-italy
 */
 
 /* Import des fonts */
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-nos-restaurants .main-menu {
+  background-color: #fdeec1;
+}
+
 @font-face {
   font-family: "Batuplat Script";
   src: url("fonts/Batuphat\ Script.otf") format("opentype");
@@ -518,6 +531,12 @@ header .logo img {
   opacity: 1;
   transform: translateY(0);
 }
+
+.specialite-preview-card.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .home-restaurants-container {
   display: flex;
   justify-content: center;
@@ -887,9 +906,541 @@ header .logo img {
 }
 
 /* Page Nos Restaurants */
-.restaurants-content {
+.nos-restaurants-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.nos-restaurants-content-header {
+  background-color: #fdeec1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  position: relative;
+}
+
+.nos-restaurants-header-title {
+  font-family: "Batuplat Script";
+  font-size: 80px;
+  color: #422a1a;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+.decorative-svg-penne {
+  position: absolute;
+  bottom: 20px; /* Ajustez la position selon vos besoins */
+  right: 100px; /* Ajustez la position selon vos besoins */
+  width: 150px; /* Ajustez la taille selon vos besoins */
+  animation: float 6s ease-in-out infinite;
+}
+
+.nos-restaurants-container-background {
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 110px);
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.nos-restaurants-content {
+  height: 90%;
+  display: flex;
+  background-color: white;
+  z-index: 2;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nos-restaurants-text-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nos-restaurant-text {
+  font-family: "Batuplat Script";
+  font-size: 40px;
+  color: #422a1a;
+  margin: 0px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+}
+
+.restaurant-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.restaurant-card {
+  background-color: #322015;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+.restaurant-image-container {
+  width: 100%;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: auto;
+}
+
+.restaurant-card-title {
+  font-family: "Batuplat Script";
+  font-size: 22px;
+  color: #322015;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.restaurant-card-adress {
+  font-family: "Heiti TC";
+  color: white;
+  font-size: 14px;
+}
+
+.restaurant-card-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.restaurant-card-button {
+  all: unset;
+  color: #322015;
+  background-color: white;
+  text-align: center;
+  font-family: "Heiti TC";
+  font-size: 13px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.restaurant-card-button:hover {
+  background-color: #f0d39d;
+  color: #322015;
+}
+
+.restaurant-card-schedules-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.restaurant-card-schedules-slider {
+  margin-top: 20px;
+}
+
+.schedule-slider {
+  display: flex;
+}
+
+.schedule-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-column h3 {
+  margin: 0px;
+  font-family: "Heiti TC";
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.day-column p {
+  margin: 0px;
+  font-family: "Heiti TC";
+  color: white;
+  padding: 7px;
+  font-size: 11px;
+  font-weight: lighter;
+}
+
+.restaurant-prev,
+.restaurant-next {
+  position: absolute;
+  top: 50%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.restaurant-prev {
+  left: 0;
+}
+
+.restaurant-next {
+  right: 0;
+}
+
+.restaurant-schedule-prev,
+.restaurant-schedule-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.restaurant-schedule-prev {
+  left: 0;
+}
+
+.restaurant-schedule-next {
+  right: 0;
+}
+² .decorative-svg-piment2 {
+  position: absolute;
+  top: 150px; /* Ajustez la position selon vos besoins */
+  right: 100px; /* Ajustez la position selon vos besoins */
+  width: 250px; /* Ajustez la taille selon vos besoins */
+  animation: float2 6s ease-in-out infinite;
+}
+
+.decorative-svg-pasta2 {
+  position: absolute;
+  bottom: 30px; /* Ajustez la position selon vos besoins */
+  left: 100px; /* Ajustez la position selon vos besoins */
+  width: 400px; /* Ajustez la taille selon vos besoins */
+  animation: float 6s ease-in-out infinite;
+}
+
+.nos-restaurant-brown-bg {
+  background-color: #422a1a;
+  content: "";
+  height: 250px;
+}
+
+.nos-specialites-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+.nos-specialites-title {
+  font-family: "Batuplat Script";
+  font-size: 60px;
+  color: #422a1a;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+.specialites-filter-buttons-container {
+  background-color: #422a1a;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.specialite-filter-button {
+  font-family: "Batuplat Script";
+  color: white;
+  font-size: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+.specialite-filter-button:hover {
+  color: #f0d39d;
+  cursor: pointer;
+}
+
+.specialites-grid-container {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  margin-bottom: 200px;
+}
+
+.specialite-preview-content {
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.specialite-preview-title {
+  font-family: "Batuplat Script";
+  font-size: 60px;
+  text-align: center;
+  margin: 0px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.specialite-preview-text {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: "Batuplat Script";
+  font-weight: 300;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.specialite-preview-section-title {
+  font-family: "Batuplat Script";
+  font-size: 50px;
+  color: #422a1a;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.specialite-preview-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.specialite-preview-image {
+  height: 100px;
+}
+
+.food-preview-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px; /* Espace pour la bordure */
+  background-image: url("images/mosaique.svg");
+  background-size: 800px;
+  position: relative;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.specialite-preview-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px; /* Espace pour la bordure */
+  background-image: url("images/mosaique.svg");
+  background-size: 800px;
+  position: relative;
+  background-size: cover;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 0;
+}
+
+.food-preview-card.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.decorative-svg-coquilette {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+  z-index: 100;
+  top: 20px;
+  left: 300px;
+  z-index: 0;
+}
+
+.decorative-svg-point-down-arrow {
+  position: absolute;
+  animation: float2 6s ease-in-out infinite;
+  z-index: 100;
+  top: 20px;
+  right: 300px;
+}
+
+.restaurant-menu-button-border {
+  display: inline-block;
+  position: absolute;
+  border-radius: 25px;
+  padding: 5px;
+  z-index: 3;
+  bottom: 50px;
+}
+
+.restaurant-menu-button-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  background: url("images/mosaique.svg") no-repeat center center;
+  background-size: cover;
+  padding: 5px;
+  box-sizing: border-box;
+  pointer-events: none;
+  background-size: 300px;
+}
+
+.restaurant-menu-button {
+  border: none;
+  border-radius: 35px;
+  background-color: #563727;
+  padding: 5px 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  font-family: "Batuplat Script";
+  color: white;
+  font-size: 25px;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.restaurant-menu-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Couleur marron */
+  z-index: -1;
+  transition: transform 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.restaurant-menu-button:hover::before {
+  transform: scaleX(1);
+}
+
+.restaurant-menu-button:hover {
+  color: #563727;
+}
+
+.restaurant-delivery-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.decorative-svg-down-left-arrow {
+  position: absolute;
+  animation: float2 6s ease-in-out infinite;
+  z-index: 100;
+  top: 50px;
+  left: 25%;
+}
+
+.restaurant-delivery-title {
+  font-family: "Batuplat Script";
+  font-size: 60px;
+  color: #422a1a;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.restaurant-delivery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurant-delivery-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 120px;
+}
+
+.restaurant-delivery-pin-border {
+  background: url("images/mosaique.svg") no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-delivery-pin {
+  width: 90%;
+  height: auto;
+}
+
+.restaurant-delivery-button {
+  font-family: "Batuplat Script";
+  color: white;
+  background-color: #594234;
+  border: solid 5px #f0d39d;
+  font-size: 25px;
+  border-radius: 25px;
+  padding: 5px 20px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.restaurant-delivery-button:hover {
+  background-color: #f0d39d;
+  color: #594234;
+  border: solid 5px #594234;
+}
+
+.restaurant-delivery-pin {
+  background-color: #322015;
+  z-index: 10;
+  border-radius: 50%;
 }
 
 /* Footer */
@@ -954,4 +1505,177 @@ footer {
 .footer-networks {
   display: flex;
   justify-content: space-evenly;
+}
+
+/* Page de Contact */
+
+.contact-content {
+  margin-top: 110px;
+  padding: 0px !important;
+}
+
+.styled-input {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #6b4f3a;
+  color: white;
+  border: 1px solid #6b4f3a;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-textarea textarea {
+  height: 80px;
+}
+
+.styled-input::placeholder {
+  color: #d3c4b1;
+}
+
+.style-btn input {
+  background-color: #6b4f3a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.style-btn input:hover {
+  background-color: #7d5a45;
+}
+
+.styled-button {
+  background-color: #6b4f3a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.styled-button:hover {
+  background-color: #7d5a45;
+}
+.contact-form {
+  width: 30%;
+}
+
+.contact-form p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.contact-page-background {
+  width: 100%;
+  background-color: #fdeec1;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
+  height: 90%;
+  align-items: center;
+}
+
+.contact-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page-content {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.contact-page-container {
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 110px);
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.contact-page-text-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-page-title {
+  font-family: "Batuplat Script";
+  font-size: 150px;
+  color: #594234;
+  font-weight: 300;
+  margin: 0px;
+}
+
+.contact-page-text {
+  font-family: "Futura";
+  font-size: 20px;
+  color: #594234;
+  width: 80%;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.contact-page-toright-arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-page-toleft-arrow {
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50%) rotate(5deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+}
+
+@keyframes rotate-left {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.contact-page-toright-arrow {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+  animation: rotate-right 2s infinite;
+}
+
+.contact-page-toleft-arrow {
+  position: absolute;
+  right: 0;
+  top: 250px;
+  animation: rotate-left 2s infinite;
 }

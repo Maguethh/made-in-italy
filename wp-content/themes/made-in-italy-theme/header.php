@@ -10,8 +10,8 @@
     <header>
         <nav>
             <ul class="main-menu">
-                <li><a href="/made-in-italy/" class="nav-button">Commander</a></li>
-                <li><a href="/made-in-italy/" class="nav-button">Notre menu</a></li>
+                <li><a href="/made-in-italy/nos-restaurants/#delivery" class="nav-button">Commander</a></li>
+                <li><a href="/made-in-italy/nos-restaurants/#menu" class="nav-button">Notre menu</a></li>
                 <!-- Logo -->
                 <li class="logo">
                     <a href="<?php echo home_url(); ?>">
