@@ -147,7 +147,6 @@ get_header();
 </div>
 </div>
 
-<div class="nos-restaurant-brown-bg"></div>
 
 <div class="nos-restaurant-brown-bg" id="menu"></div>
 
