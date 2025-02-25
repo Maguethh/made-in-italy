@@ -8,6 +8,88 @@ function add_body_class_for_restaurants($classes) {
 }
 add_filter('body_class', 'add_body_class_for_restaurants');
 
+// Ajouter une meta box pour les images du cursor gallery
+function add_cursor_gallery_meta_box() {
+    global $post;
+    if ($post->post_name == 'accueil') { // Vérifiez le slug de la page
+        add_meta_box(
+            'cursor_gallery_meta_box', // ID
+            'Cursor Gallery Images', // Titre
+            'show_cursor_gallery_meta_box', // Callback
+            'page', // Écran
+            'normal', // Contexte
+            'high' // Priorité
+        );
+    }
+}
+add_action('add_meta_boxes', 'add_cursor_gallery_meta_box');
+
+// Afficher la meta box pour les images du cursor gallery
+function show_cursor_gallery_meta_box($post) {
+    $cursor_gallery_images = get_post_meta($post->ID, 'home_cursor_gallery', true);
+    wp_nonce_field('cursor_gallery_nonce', 'cursor_gallery_nonce_field');
+    ?>
+    <div id="cursor_gallery_images_container">
+        <?php if (!empty($cursor_gallery_images)) : ?>
+            <?php foreach ($cursor_gallery_images as $image) : ?>
+                <div class="cursor_gallery_image">
+                    <input type="text" name="cursor_gallery_images[]" value="<?php echo esc_url($image); ?>" style="width: 80%;" />
+                    <button class="remove_image_button button">Remove</button>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </div>
+    <button id="add_cursor_image_button" class="button">Add Image</button>
+    <script>
+        jQuery(document).ready(function($) {
+            $('#add_cursor_image_button').click(function(e) {
+                e.preventDefault();
+                var imageFrame;
+                if (imageFrame) {
+                    imageFrame.open();
+                    return;
+                }
+                imageFrame = wp.media({
+                    title: 'Select Image',
+                    button: {
+                        text: 'Add Image'
+                    },
+                    multiple: false
+                });
+                imageFrame.on('select', function() {
+                    var attachment = imageFrame.state().get('selection').first().toJSON();
+                    $('#cursor_gallery_images_container').append('<div class="cursor_gallery_image"><input type="text" name="cursor_gallery_images[]" value="' + attachment.url + '" style="width: 80%;" /><button class="remove_image_button button">Remove</button></div>');
+                });
+                imageFrame.open();
+            });
+            $(document).on('click', '.remove_image_button', function(e) {
+                e.preventDefault();
+                $(this).parent().remove();
+            });
+        });
+    </script>
+    <?php
+}
+
+// Enregistrer les images du cursor gallery
+function save_cursor_gallery_meta_box($post_id) {
+    if (!isset($_POST['cursor_gallery_nonce_field']) || !wp_verify_nonce($_POST['cursor_gallery_nonce_field'], 'cursor_gallery_nonce')) {
+        return;
+    }
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return;
+    }
+    if (!current_user_can('edit_post', $post_id)) {
+        return;
+    }
+    if (isset($_POST['cursor_gallery_images'])) {
+        update_post_meta($post_id, 'home_cursor_gallery', array_map('esc_url_raw', $_POST['cursor_gallery_images']));
+    } else {
+        delete_post_meta($post_id, 'home_cursor_gallery');
+    }
+}
+add_action('save_post', 'save_cursor_gallery_meta_box');
+
 // Ajouter une meta box pour les images du slider principal
 function add_slider_images_meta_box() {
     global $post;

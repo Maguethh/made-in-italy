@@ -103,3 +103,27 @@
 [24-Feb-2025 12:29:12 UTC]   Automatic plugin updates starting...
 [24-Feb-2025 12:29:12 UTC]   Automatic plugin updates complete.
 [24-Feb-2025 12:29:12 UTC] Automatic updates complete.
+[25-Feb-2025 09:53:11 UTC] PHP Warning:  mysqli_real_connect(): php_network_getaddresses: getaddrinfo for db5017281120.hosting-data.io failed: H�te inconnu.  in C:\xampp\htdocs\made-in-italy\wp-includes\class-wpdb.php on line 1982
+[25-Feb-2025 09:53:11 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for db5017281120.hosting-data.io failed: H�te inconnu.  in C:\xampp\htdocs\made-in-italy\wp-includes\class-wpdb.php on line 1982
+[25-Feb-2025 09:53:12 UTC] PHP Warning:  mysqli_real_connect(): php_network_getaddresses: getaddrinfo for db5017281120.hosting-data.io failed: H�te inconnu.  in C:\xampp\htdocs\made-in-italy\wp-includes\class-wpdb.php on line 1982
+[25-Feb-2025 09:53:12 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for db5017281120.hosting-data.io failed: H�te inconnu.  in C:\xampp\htdocs\made-in-italy\wp-includes\class-wpdb.php on line 1982
+[25-Feb-2025 09:53:19 UTC] Automatic updates starting...
+[25-Feb-2025 09:53:19 UTC]   Automatic plugin updates starting...
+[25-Feb-2025 09:53:19 UTC]   Automatic plugin updates complete.
+[25-Feb-2025 09:53:19 UTC] Automatic updates complete.
+[25-Feb-2025 10:49:54 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 550
+[25-Feb-2025 10:49:55 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 550
+[25-Feb-2025 10:49:55 UTC] PHP Notice:  La fonction _load_textdomain_just_in_time a été appelée de façon <strong>incorrecte</strong>. Le chargement de la traduction pour le domaine <code>made-in-italy</code> a été déclenché trop tôt. Cela indique généralement que du code dans l’extension ou le thème s’exécute trop tôt. Les traductions doivent être chargées au moment de l’action <code>init</code> ou plus tard. Veuillez lire <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 6.7.0.) in C:\xampp\htdocs\made-in-italy\wp-includes\functions.php on line 6114
+[25-Feb-2025 10:49:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\made-in-italy\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[25-Feb-2025 10:49:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\made-in-italy\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[25-Feb-2025 10:52:05 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting ")" in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 21
+[25-Feb-2025 10:56:29 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 27
+[25-Feb-2025 11:00:15 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 27
+[25-Feb-2025 11:00:16 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 27
+[25-Feb-2025 11:00:16 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\made-in-italy\wp-content\themes\made-in-italy-theme\functions.php on line 27
+[25-Feb-2025 11:01:16 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, function "show_slider_images_meta_box" not found or invalid function name in C:\xampp\htdocs\made-in-italy\wp-admin\includes\template.php:1456
+Stack trace:
+#0 C:\xampp\htdocs\made-in-italy\wp-admin\edit-form-advanced.php(722): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#1 C:\xampp\htdocs\made-in-italy\wp-admin\post.php(206): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\made-in-italy\wp-admin\includes\template.php on line 1456

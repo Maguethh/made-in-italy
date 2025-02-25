@@ -10,16 +10,16 @@
     <header>
         <nav>
             <ul class="main-menu">
-                <li><a href="/made-in-italy/nos-restaurants/#delivery" class="nav-button">Commander</a></li>
-                <li><a href="/made-in-italy/nos-restaurants/#menu" class="nav-button">Notre menu</a></li>
+                <li><a href="/nos-restaurants/#delivery" class="nav-button">Commander</a></li>
+                <li><a href="/nos-restaurants/#menu" class="nav-button">Notre menu</a></li>
                 <!-- Logo -->
                 <li class="logo">
                     <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.svg" alt="Logo">
                     </a>
                 </li>
-                <li><a href="/made-in-italy/nos-restaurants" class="nav-button">Nos restaurants</a></li>
-                <li><a href="/made-in-italy/contact" class="nav-button">Contact</a></li>
+                <li><a href="/nos-restaurants" class="nav-button">Nos restaurants</a></li>
+                <li><a href="/contact" class="nav-button">Contact</a></li>
             </ul>
             <div class="mobile-header-container">
             <a href="<?php echo home_url(); ?>">
@@ -45,10 +45,10 @@
             </div>
         </div>
         <ul class="mobile-menu-list">
-            <li><a href="/made-in-italy/nos-restaurants/#delivery" class="nav-button">Commander</a></li>
-            <li><a href="/made-in-italy/nos-restaurants/#menu" class="nav-button">Notre menu</a></li>
-            <li><a href="/made-in-italy/nos-restaurants" class="nav-button">Nos restaurants</a></li>
-            <li><a href="/made-in-italy/contact" class="nav-button">Contact</a></li>
+            <li><a href="/nos-restaurants/#delivery" class="nav-button">Commander</a></li>
+            <li><a href="/nos-restaurants/#menu" class="nav-button">Notre menu</a></li>
+            <li><a href="/nos-restaurants" class="nav-button">Nos restaurants</a></li>
+            <li><a href="/contact" class="nav-button">Contact</a></li>
             <div class="mobile-icon-list">
                 <div class="mobile-icon"><img  class="footer-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/instagram.svg" alt="Instagram Decoration">  </div>
                 <div class="mobile-icon"><img  class="footer-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt="Instagram Decoration">  </div>
