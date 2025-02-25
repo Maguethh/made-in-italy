@@ -30,7 +30,7 @@ get_header();
   
   <div class="home-story-container">
     <div class="home-story-section-1">
-      <h1 class="home-story-title">Notre histoire...</h1>
+      <h1 class="home-story-title title-animate">Notre histoire...</h1>
         <p class="home-story-text">
           Made in Italy, un concept unique fondé par David.
           C'est l'endroit de la street food italienne premium, ou toutes les spécialités de chaque région sont réunies.<br>La pizzatella de Rome, Les Arancinis et la patisserie de Sicile, 
@@ -39,7 +39,7 @@ get_header();
     </div>
       <div class="home-story-section-2">
         <div class="home-story-image-container">
-          <img class="home-story-image" src="<?php echo get_template_directory_uri(); ?>/images/story.png" alt="">
+          <img class="home-story-image image-animate" src="<?php echo get_template_directory_uri(); ?>/images/story.png" alt="">
         </div>
       </div>  
     </div>
@@ -49,13 +49,13 @@ get_header();
     <div class="background"></div>
     <div class="background2"></div>
     <div class="hover-images-container">
-      <div class="hover-images-title">Plus que des photos, notre quotidien.</div>
+      <div class="hover-images-title title-animate">Plus que des photos, notre quotidien.</div>
       <img class="decorative-svg" src="<?php echo get_template_directory_uri(); ?>/images/pasta.svg" alt="Pasta Decoration">
     </div>
   </div>
   
   <div class="food-preview-section" id="home-food-preview">
-    <div class="food-preview-section-title">Un aperçu de vos plats !</div>
+    <div class="food-preview-section-title title-animate">Un aperçu de vos plats !</div>
     <div class="food-preview-grid">
       <?php
       $home_food_preview = get_post_meta(get_the_ID(), 'home_food_preview', true);
@@ -79,7 +79,7 @@ get_header();
     <img class="decorative-truffe" src="<?php echo get_template_directory_uri(); ?>/images/truffe.png" alt="Truffe Decoration">
 
         <div class="home-restaurant-section-1">
-            <h2 class="home-restaurant-title">Nos restaurants près de chez vous !</h2>
+            <h2 class="home-restaurant-title title-animate">Nos restaurants près de chez vous !</h2>
             <p class="home-restaurant-text">
                 Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque oppleta validis et castellis, quae ad repellendos gentium vicinarum excursus sollicitudo pervigil veterum per oportunos saltus erexit et
             </p>
@@ -92,7 +92,7 @@ get_header();
                 if (!empty($restaurant_slider_images)):
                     foreach ($restaurant_slider_images as $image): ?>
                         <div class="restaurant-slide">
-                            <img src="<?php echo esc_url($image); ?>" alt="Restaurant Slider Image">
+                            <img src="<?php echo esc_url($image); ?>" alt="Restaurant Slider Image" class="image-animate">
                         </div>
                     <?php endforeach;
                 endif;
@@ -118,7 +118,7 @@ get_header();
 
     </div>
     <div class="home-contact-section-2">
-      <h2 class="home-contact-title">Salutaci !</h2>
+      <h2 class="home-contact-title title-animate">Salutaci !</h2>
       <p class="home-contact-text">Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque oppleta validis et castellis, quae ad repellendos gentium vicinarum excursus sollicitudo pervigil veterum per oportunos saltus erexit et</p>
         <div class="home-contact-button-border">
       <button class="home-contact-button">Contactez nous !</button>
@@ -239,8 +239,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // JavaScript pour l'animation d'apparition des cards
+  // JavaScript pour l'animation d'apparition des titres
   const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  const titles = document.querySelectorAll('.title-animate');
+  titles.forEach(title => {
+    observer.observe(title);
+  });
+
+  // JavaScript pour l'animation d'apparition des images
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  const imagesToAnimate = document.querySelectorAll('.image-animate');
+  imagesToAnimate.forEach(image => {
+    imageObserver.observe(image);
+  });
+
+  // JavaScript pour l'animation d'apparition des cards
+  const cardObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const index = entry.target.getAttribute('data-index');
@@ -254,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const cardsToAnimate = document.querySelectorAll('.food-preview-card');
   cardsToAnimate.forEach(card => {
-    observer.observe(card);
+    cardObserver.observe(card);
   });
 });
 </script>

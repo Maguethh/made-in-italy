@@ -21,10 +21,15 @@
                 <li><a href="/made-in-italy/nos-restaurants" class="nav-button">Nos restaurants</a></li>
                 <li><a href="/made-in-italy/contact" class="nav-button">Contact</a></li>
             </ul>
-            <div class="hamburger-menu" id="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="mobile-header-container">
+            <a href="<?php echo home_url(); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/white-logo.svg" class="mobile-header-logo-top" alt="Logo">
+            </a>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -44,6 +49,11 @@
             <li><a href="/made-in-italy/nos-restaurants/#menu" class="nav-button">Notre menu</a></li>
             <li><a href="/made-in-italy/nos-restaurants" class="nav-button">Nos restaurants</a></li>
             <li><a href="/made-in-italy/contact" class="nav-button">Contact</a></li>
+            <div class="mobile-icon-list">
+                <div class="mobile-icon"><img  class="footer-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/instagram.svg" alt="Instagram Decoration">  </div>
+                <div class="mobile-icon"><img  class="footer-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt="Instagram Decoration">  </div>
+                <div class="mobile-icon"><img  class="footer-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/arrow.svg" alt="Instagram Decoration">     </div>
+            </div>
         </ul>
     </div>
 

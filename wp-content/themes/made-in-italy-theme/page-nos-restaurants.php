@@ -9,7 +9,7 @@ get_header();
 
   <div class="nos-restaurants-content-header">
   <img class="decorative-svg-penne" src="<?php echo get_template_directory_uri(); ?>/images/penne.svg" alt="Pasta Decoration">
-  <h1 class="nos-restaurants-header-title">Nos restaurants</h1>
+  <h1 class="nos-restaurants-header-title title-animate">Nos restaurants</h1>
   </div>
 
   <div class="nos-restaurants-container-background">
@@ -20,8 +20,8 @@ get_header();
     <img class="decorative-svg-piment2" src="<?php echo get_template_directory_uri(); ?>/images/piment2.svg" alt="Pasta Decoration">
 
     <div class="nos-restaurant-text-section">
-      <p class="nos-restaurant-text restaurant-text-1">Plus qu'une simple adresse.</p>
-      <p class="nos-restaurant-text">Une culture gustative.</p>
+      <p class="nos-restaurant-text restaurant-text-1 title-animate">Plus qu'une simple adresse.</p>
+      <p class="nos-restaurant-text title-animate">Une culture gustative.</p>
     </div>
 
       <div class="restaurant-cards-container">
@@ -75,8 +75,8 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <button class="restaurant-schedule-prev" onclick="plusSlides(-1)">&#10094;</button>
-                <button class="restaurant-schedule-next" onclick="plusSlides(1)">&#10095;</button>
+                <button class="restaurant-schedule-prev" onclick="plusSlides(this, -1)">&#10094;</button>
+                <button class="restaurant-schedule-next" onclick="plusSlides(this, 1)">&#10095;</button>
             </div>
             <p class="restaurant-card-adress">35 rue de la boétie 75008 paris</p>
             <div class="restaurant-card-buttons-container">
@@ -134,8 +134,8 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <button class="restaurant-schedule-prev" onclick="plusSlides(-1)">&#10094;</button>
-                <button class="restaurant-schedule-next" onclick="plusSlides(1)">&#10095;</button>
+                <button class="restaurant-schedule-prev" onclick="plusSlides(this, -1)">&#10094;</button>
+                <button class="restaurant-schedule-next" onclick="plusSlides(this, 1)">&#10095;</button>
             </div>
             <p class="restaurant-card-adress">35 rue de la boétie 75008 paris</p>
             <div class="restaurant-card-buttons-container">
@@ -153,7 +153,7 @@ get_header();
 <div class="nos-specialites-container"  >
 <img class="decorative-svg-coquilette" src="<?php echo get_template_directory_uri(); ?>/images/coquillete.svg" alt="Pasta Decoration">
 <img class="decorative-svg-point-down-arrow" src="<?php echo get_template_directory_uri(); ?>/images/pointarrow.svg" alt="Pasta Decoration">
-  <div class="nos-specialites-title">Nos spécialités</div>
+  <div class="nos-specialites-title title-animate">Nos spécialités</div>
   <div class="specialites-filter-buttons-container">
     <?php
     $specialite_types = get_post_meta(get_the_ID(), 'restaurant_types', true);
@@ -199,18 +199,18 @@ get_header();
 </div>
 
 <div class="restaurant-delivery-container" >
-  <h2 class="restaurant-delivery-title">Livraison chez vous<br>ou au taf.. !</h2>
+  <h2 class="restaurant-delivery-title title-animate">Livraison chez vous<br>ou au taf.. !</h2>
   <div class="restaurant-delivery-content" >
     <img class="decorative-svg-down-left-arrow" src="<?php echo get_template_directory_uri(); ?>/images/leftdownarrow.svg" alt="Arrow Decoration">
     <div class="restaurant-delivery-item">
-    <div class="restaurant-delivery-pin-border">
+    <div class="restaurant-delivery-pin-border image-animate">
           <img class="restaurant-delivery-pin" src="<?php echo get_template_directory_uri(); ?>/images/uber-logo.png" alt="Uber Pin">
     </div>
 <a class="restaurant-delivery-button">Je commande</a>
     </div>
     
     <div class="restaurant-delivery-item">
-    <div class="restaurant-delivery-pin-border">
+    <div class="restaurant-delivery-pin-border image-animate">
           <img class="restaurant-delivery-pin" src="<?php echo get_template_directory_uri(); ?>/images/deliveroo-logo.png" alt="Uber Pin">
     </div>
 <a class="restaurant-delivery-button">Je commande</a>
@@ -233,7 +233,7 @@ get_header();
 
     </div>
     <div class="home-contact-section-2">
-      <h2 class="home-contact-title">Salutaci !</h2>
+      <h2 class="home-contact-title title-animate">Salutaci !</h2>
       <p class="home-contact-text">Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque oppleta validis et castellis, quae ad repellendos gentium vicinarum excursus sollicitudo pervigil veterum per oportunos saltus erexit et</p>
         <div class="home-contact-button-border">
       <button class="home-contact-button">Contactez nous !</button>
@@ -258,20 +258,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-let slideIndex = 0;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-let slides = document.querySelectorAll(".schedule-slide");
-if (n >= slides.length) { slideIndex = 0 }
-if (n < 0) { slideIndex = slides.length - 1 }
-for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(${-slideIndex * 100}%)`;
-}
+function plusSlides(button, n) {
+  const slider = button.parentElement.querySelector('.schedule-slider');
+  let slideIndex = parseInt(slider.getAttribute('data-slide-index')) || 0;
+  slideIndex += n;
+  const slides = slider.querySelectorAll('.schedule-slide');
+  if (slideIndex >= slides.length) { slideIndex = 0; }
+  if (slideIndex < 0) { slideIndex = slides.length - 1; }
+  slider.setAttribute('data-slide-index', slideIndex);
+  slider.style.transform = `translateX(${-slideIndex * 100}%)`;
 }
 
 jQuery(document).ready(function($) {
@@ -327,6 +322,36 @@ const cardsToAnimate = document.querySelectorAll('.specialite-preview-card');
 cardsToAnimate.forEach(card => {
     observer.observe(card);
 });
+});
+
+// JavaScript pour l'animation d'apparition des titres
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('appear');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+const titles = document.querySelectorAll('.title-animate');
+titles.forEach(title => {
+  observer.observe(title);
+});
+
+// JavaScript pour l'animation d'apparition des images
+const imageObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('appear');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+const imagesToAnimate = document.querySelectorAll('.image-animate');
+imagesToAnimate.forEach(image => {
+  imageObserver.observe(image);
 });
 </script>
 
