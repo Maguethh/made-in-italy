@@ -6,9 +6,9 @@
     <div class="footer-navbar">
         <ul class="footer-navbar-list">
             <li><a href="/">ACCUEIL</a></li>
-            <li><a href="/nos-restaurants">NOS RESTAURANTS</a></li>
-            <li><a href="/contact">RECRUTEMENTS</a></li>
-            <li><a href="/contact">CONTACTEZ-NOUS</a></li>
+            <li><a href="/nos-restaurants/">NOS RESTAURANTS</a></li>
+            <li><a href="/contact/">RECRUTEMENTS</a></li>
+            <li><a href="/contact/">CONTACTEZ-NOUS</a></li>
         </ul>
     </div>
 
